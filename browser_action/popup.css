@@ -1,0 +1,61 @@
+BODY {
+  font-family: 'Open Sans', Sans;
+  font-size: 10pt;
+  margin: 10px;
+}
+
+BODY.popup {
+  margin: 0px;
+}
+
+TD {
+  font-family: 'Open Sans', Sans;
+  font-size: 10pt;
+  vertical-align: top;  
+}
+
+TD.header {
+  font-size: 12pt;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+TR {
+  cursor: pointer;
+}
+
+TR:hover{
+  background-color: #EEEEEE;
+}
+
+TD.popup_item {
+  font-size: 10pt;
+  white-space: nowrap;
+  margin-left: 8px;
+  padding-left: 8px;
+}
+
+TABLE.popup_group_table {
+  width: 250px;
+  border-spacing: 0px;
+}
+
+#options_table {
+  padding: 0px;
+  margin: 0px;
+}
+
+.removeButton {
+  padding-right: 5px;
+  width: 13px;
+  height: 16px;
+  background: url(../images/remove.png);
+  background-repeat: no-repeat;
+}
+
+.truncate {
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

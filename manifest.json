@@ -1,0 +1,29 @@
+{
+    "name": "Hide Element",
+    "description": "Right click to hide an element",
+    "version": "0.1",
+    "permissions": [
+        "contextMenus",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": ["content/cssUtil.js", "content/xpathUtil.js", "content/content.js"],
+        "run_at": "document_start"
+        }
+    ],
+    "icons": { 
+            "16":  "images/icon16.png",
+            "48":  "images/icon48.png",
+            "128": "images/icon128.png" 
+            },
+    "browser_action": {
+        "default_icon": "images/icon19.png",
+        "default_popup": "browser_action/popup.html"
+    },
+    "manifest_version":2
+}
